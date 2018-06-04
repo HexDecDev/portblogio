@@ -1,0 +1,187 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+}
+
+body{
+  background: url('https://images.pexels.com/photos/490411/pexels-photo-490411.jpeg?cs=srgb&dl=road-landscape-nature-490411.jpg&fm=jpg') no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.App{
+  width: 100%;
+  position: absolute;
+  min-height: 100%;
+}
+
+#Header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 50px;
+}
+
+#NavBlock{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+
+}
+
+.HedaerLink{
+  display: flex;
+  height: 50px;
+  text-align: center;
+  width: 75px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.HedaerLink:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+#Content{
+  width: 100%;
+  position: absolute;
+  height: calc(100% - 50px);
+  display: flex;
+  /*align-items: stretch;*/
+}
+
+
+#Blog{
+  padding-top: 15px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#CategoryNavigation{
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 150px;
+}
+
+
+.CategoryLink{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CategoryLinkSelected{
+  border-right: 5px solid green;
+}
+
+.CategoryLink:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#PostList{
+  
+  margin-left: 150px;
+  width: calc(100% - 150px);
+  height: calc(100% - 150px);
+  display: flex;
+}
+
+#PostListContainer{
+
+  width: 100%;
+}
+
+#CategoryHeader{
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: aqua;
+}
+
+#ActuallyThisIsARealPostListAndFuckYouAnyway{
+  position: relative;
+
+  height: 100%;
+  overflow: scroll;
+  overflow-x:hidden;
+}
+
+
+#PostText{
+
+}
+
+.PostPreviewContainer{
+  margin-bottom: 10px;
+  width: 100%;
+
+  
+}
+
+.PostHeaderContainer{
+  background: linear-gradient(to bottom right,#00416797,#000000c9) !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+
+.PostHeaderContainer:hover{
+  background: linear-gradient(to bottom right,#00416797,#0000008e) !important;
+}
+
+.PostTitle{
+
+  color: rgb(255, 255, 255);
+
+}
+
+
+.PostDescriptionContainer{
+  background-color: darkturquoise;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.PostDescriptionText{
+  background-color: green;
+}
+
+.PostDescriptionMeta{
+  display: flex;
+  background-color: lightcoral;
+}
+
+.PostDescriptionDate{
+  background-color: plum;
+}
+
+.PostDescriptionCategory{
+  background-color: rebeccapurple;
+}
+
+#NavigationButtonsContainer{
+  display: flex;
+  justify-content: center;
+}

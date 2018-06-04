@@ -1,0 +1,190 @@
+html, body {
+  height: 100%;
+  overflow-y:hidden;
+  background-image: url('./images/stardust.png');
+}
+
+*:focus {
+  outline: none;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color: rgb(186, 186, 186);
+}
+
+
+.App-header {
+  background-color: #222;
+  padding-top: 25px;
+  color: white;
+  text-align: center;
+  height: 75px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+#Editor-container
+{
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-start;
+  position: absolute;
+  height: calc(100% - 75px);
+}
+
+
+
+#Editor
+{
+  padding-top: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#Side-menu
+{
+  
+  width: 300px;
+  overflow: scroll;
+  overflow-x:hidden;
+}
+
+#Side-menu::-webkit-scrollbar { width: 0; }
+
+.ui.vertical.menu {
+  width: 100%;
+}
+
+.ui.secondary.menu {
+
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+#Pagination{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.Editor-part{
+  padding: 2px;
+}
+
+
+#inputValue::-webkit-scrollbar { width: 2px; background-color: rgb(255, 255, 255) }
+#inputValue::-webkit-scrollbar-thumb { background: #000;  }
+
+#inputValue-wrapper{
+  height: calc(100% - 180px);
+}
+#inputValue
+{
+
+  height: 100%;
+  overflow: scroll;
+  overflow-x:hidden;
+  resize: none;
+  width: 100%;
+  border: #222;
+  padding: 15px;
+  
+}
+
+#Save-buttons{
+  padding-top:10px;
+  padding-bottom:10px;
+  
+}
+
+
+.Shadowed
+{
+  
+  height: 150px;
+}
+
+#Post-header
+{
+  background: linear-gradient(to bottom right,#00416797,#0000008e) !important;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.1;
+  
+}
+
+#Editor-preview-wrapper{
+  width: 60%;
+  height: 100%;
+}
+
+#Editor-preview
+{
+  background-color: rgba(255, 255, 255, 0.9);
+  height: calc(100% - 150px);
+  overflow: scroll;
+  overflow-x:hidden;
+  flex-basis: auto;
+  padding: 10px;
+}
+
+#Editor-preview img
+{
+  margin: 0 auto;
+  width: 250px;
+  display: block;
+  clear: both;
+  text-align: center;
+}
+
+#Editor-preview blockquote
+{
+
+  border-left: 5px solid green;
+  background-color: rgba(34, 34, 34, 0.105);
+  padding: 15px;
+  margin-left: 5px;
+}
+
+
+
+.Image-description
+{
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 400;
+  color: rgb(186, 186, 186);
+}
+
+.Youtube-embed-container
+{
+  text-align: center;
+}
+
+#Copyright{
+  text-align: center;
+  color: rgb(186, 186, 186);
+  bottom: 0;
+}
